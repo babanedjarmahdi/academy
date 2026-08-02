@@ -2,11 +2,12 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Bot, Search } from "lucide-react";
+import { Search } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { APP_NAME, NAV_ITEMS } from "@/lib/constants";
+import { NAV_ITEMS } from "@/lib/constants";
 import { useAcademy } from "@/context/academy-provider";
 import { XpBar } from "@/components/shared/xp-bar";
+import { Logo } from "@/components/brand/logo";
 
 export function SidebarContent() {
   const pathname = usePathname();
@@ -14,14 +15,8 @@ export function SidebarContent() {
 
   return (
     <div className="flex h-full flex-col">
-      <div className="flex items-center gap-3 px-5 pb-6 pt-6">
-        <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-primary to-accent shadow-lg shadow-primary/20">
-          <Bot className="h-5 w-5 text-primary-foreground" />
-        </div>
-        <div className="leading-tight">
-          <p className="text-sm font-bold tracking-tight">{APP_NAME}</p>
-          <p className="text-[11px] text-muted-foreground">AI Automation Engineering</p>
-        </div>
+      <div className="px-5 pb-6 pt-6">
+        <Logo />
       </div>
 
       <nav className="flex-1 space-y-1 overflow-y-auto px-3 scrollbar-thin">

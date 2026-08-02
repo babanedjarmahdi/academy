@@ -5,10 +5,10 @@ import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Flame, GraduationCap, Search } from "lucide-react";
 import { getLessonContext } from "@/data";
-import { MenuButton } from "./app-shell";
 import { useAcademy } from "@/context/academy-provider";
 import { lessonHref } from "@/lib/routes";
 import { SyncStatusBadge } from "@/components/sync/sync-status-badge";
+import { LogoMark } from "@/components/brand/logo";
 
 export function Topbar({ onMenuClick }: { onMenuClick: () => void }) {
   const { streak, levelInfo, stats, todayMission } = useAcademy();
@@ -54,7 +54,14 @@ export function Topbar({ onMenuClick }: { onMenuClick: () => void }) {
 
   return (
     <header className="sticky top-0 z-30 flex h-14 items-center gap-3 border-b border-border bg-background/80 px-4 backdrop-blur-xl sm:px-6 lg:px-8">
-      <MenuButton onClick={onMenuClick} />
+      <button
+        onClick={onMenuClick}
+        className="lg:hidden"
+        aria-label="Open menu"
+        title="Open menu"
+      >
+        <LogoMark className="h-9 w-9" />
+      </button>
       <button
         onClick={openSearch}
         className="flex h-9 flex-1 items-center gap-2 rounded-lg border border-border bg-secondary/40 px-3 text-sm text-muted-foreground transition-colors hover:bg-secondary sm:max-w-xs"

@@ -18,7 +18,7 @@ const mono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AI Automation Academy",
+  title: "Nexus",
   description:
     "From zero to expert in AI automation engineering — a hands-on curriculum with projects, XP, and achievements.",
 };

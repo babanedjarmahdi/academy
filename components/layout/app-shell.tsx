@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import { X } from "lucide-react";
 import { NAV_ITEMS } from "@/lib/constants";
 import { useAcademy } from "@/context/academy-provider";
 import { SidebarContent } from "./sidebar";
@@ -82,17 +82,5 @@ export function AppShell({ children }: { children: React.ReactNode }) {
         </main>
       </div>
     </div>
-  );
-}
-
-export function MenuButton({ onClick }: { onClick: () => void }) {
-  return (
-    <button
-      onClick={onClick}
-      className="rounded-md p-2 text-muted-foreground hover:bg-secondary lg:hidden"
-      aria-label="Open menu"
-    >
-      <Menu className="h-5 w-5" />
-    </button>
   );
 }

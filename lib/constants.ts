@@ -1,7 +1,7 @@
 import type { Difficulty } from "@/types";
 
-export const APP_NAME = "AI Automation Academy";
-export const APP_TAGLINE = "From zero to expert in AI automation engineering";
+export const APP_NAME = "Nexus";
+export const APP_TAGLINE = "AI Automation Engineering Academy";
 export const STORAGE_KEY = "ai-automation-academy:v1";
 
 export const STORAGE_VERSION = 1;

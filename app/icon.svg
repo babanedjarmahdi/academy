@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="8.5 12 14.5 18" fill="none">
+  <rect x="8.5" y="12" width="14.5" height="18" rx="4.5" fill="#000" />
+  <path
+    d="M21.8 28.2 L10.84 14 V25.6"
+    fill="none"
+    stroke="#fff"
+    stroke-width="1.86"
+    mask="url(#nx_mask)"
+  />
+  <path
+    d="M20.325 14.5 V26.1"
+    stroke-width="1.86"
+    stroke="#fff"
+  />
+  <defs>
+    <mask id="nx_mask">
+      <rect x="8.5" y="12" width="14.5" height="18" fill="#fff" />
+      <rect x="8.5" y="13" width="5" height="1.5" fill="#000" />
+    </mask>
+  </defs>
+</svg>

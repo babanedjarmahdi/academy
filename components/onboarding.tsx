@@ -4,7 +4,6 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import {
   ArrowRight,
-  Bot,
   CheckCircle2,
   Code2,
   Rocket,
@@ -12,6 +11,7 @@ import {
 } from "lucide-react";
 import { useAcademy } from "@/context/academy-provider";
 import { APP_NAME, APP_TAGLINE } from "@/lib/constants";
+import { LogoMark } from "@/components/brand/logo";
 
 const highlights = [
   { icon: Code2, title: "6 semesters", text: "96 hands-on lessons from zero to expert." },
@@ -39,7 +39,7 @@ export function Onboarding() {
             transition={{ delay: 0.1, type: "spring", stiffness: 200, damping: 18 }}
             className="flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-primary to-accent shadow-xl shadow-primary/25"
           >
-            <Bot className="h-8 w-8 text-primary-foreground" />
+            <LogoMark bare className="h-10 w-10 text-primary-foreground" />
           </motion.div>
           <h1 className="mt-6 text-3xl font-bold tracking-tight sm:text-4xl">
             {APP_NAME}
